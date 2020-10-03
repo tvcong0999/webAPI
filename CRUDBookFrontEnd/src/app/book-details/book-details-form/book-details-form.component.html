@@ -1,0 +1,61 @@
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+  <input type="hidden" name="Id" [value]="service.formData.Id" />
+  <div class="form-group">
+    <label>NAME BOOK</label>
+    <input
+      name="Name"
+      #Name="ngModel"
+      [(ngModel)]="service.formData.Name"
+      class="form-control form-control-lg"
+      placeholder="Name's Book"
+      required
+      [class.invalid]="Name.invalid && Name.touched"
+    />
+  </div>
+  <div class="form-group">
+    <label>AUTHOR</label>
+    <input
+      name="Author"
+      #Author="ngModel"
+      [(ngModel)]="service.formData.Author"
+      class="form-control form-control-lg"
+      placeholder="Author"
+      required
+      [class.invalid]="Author.invalid && Author.touched"
+    />
+  </div>
+  <div class="form-group">
+    <label>CATEGORY</label>
+    <input
+      name="Category"
+      #Category="ngModel"
+      [(ngModel)]="service.formData.Category"
+      class="form-control form-control-lg"
+      placeholder="Category"
+      required
+      [class.invalid]="Category.invalid && Category.touched"
+    />
+  </div>
+  <div class="form-group">
+    <label>PUBLISHER</label>
+    <input
+      name="Publisher"
+      #Publisher="ngModel"
+      [(ngModel)]="service.formData.Publisher"
+      class="form-control form-control-lg"
+      placeholder="Publisher"
+      required
+      [class.invalid]="Publisher.invalid && Publisher.touched"
+    />
+  </div>
+
+  <div class="form-group">
+    <button
+      class="btn btn-info btn-lg btn-block"
+      type="submit"
+      [disabled]="form.invalid"
+    >
+      ADD
+    </button>
+  </div>
+</form>

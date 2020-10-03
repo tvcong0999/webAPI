@@ -1,0 +1,77 @@
+.form-group label {
+  color: grey;
+}
+
+.form-group input {
+  font-weight: 500;
+}
+
+.form-group input::placeholder {
+  color: #c0bdbd;
+  font-weight: 300;
+}
+
+thead th {
+  font-weight: 400;
+}
+
+table tr:hover {
+  background-color: #fffbf2;
+  cursor: pointer;
+}
+
+input.invalid {
+  border-color: red;
+}
+
+.table {
+  margin-top: 20px;
+  height: 400px;
+  display: block;
+}
+.table .r {
+  height: 70px;
+
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  margin-top: 30px;
+
+}
+
+.container {
+    max-width: 100%;
+}
+
+.jumbotron {
+  padding: 0rem 2rem;
+}
+
+.navbar .user{
+  position: absolute;
+  right: 25px;
+  top: 6px;
+}
+.navbar .btnhome{
+  background-color: #6c757d!important;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.navbar .btnhome:hover{
+  background-color: #4b769b!important;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.navbar .user .fa-user-circle{
+  font-size: 30px;
+}

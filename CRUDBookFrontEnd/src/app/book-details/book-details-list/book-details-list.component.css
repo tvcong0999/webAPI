@@ -1,0 +1,27 @@
+.on{
+    width: 10%;
+}
+.name{
+    width: 30%;
+}
+.author{
+    width: 25%;
+}
+.category{
+    width: 20%;
+}
+.publisher{
+    width: 20%;
+}
+.delete{
+    width: 15%;
+}
+.ceil{
+    height: 20px;
+}
+.ml-3, .mx-3 {
+    margin-left: 0rem!important;
+}
+.w-75 {
+    width: 100%!important;
+}

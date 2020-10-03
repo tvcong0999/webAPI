@@ -1,0 +1,55 @@
+<input
+  class="form-control form-control-sm ml-3 w-75 mytext"
+  type="text"
+  placeholder="Search"
+  aria-label="Search"
+  [(ngModel)]="searchText"
+/>
+
+<table class="table table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th class="on">O.N</th>
+      <th class="name">NAME</th>
+      <th class="author">AUTHOR</th>
+      <th class="category">CATEGORY</th>
+      <th class="publisher">PUBLISHER</th>
+      <th class="delete"></th>
+    </tr>
+  </thead>
+  <tr
+    class="r"
+    *ngFor="
+      let b of service.list
+        | filter: searchText
+        | slice: (page - 1) * pageSize:(page - 1) * pageSize + pageSize;
+      let i = index
+    "
+  >
+    <td class="ceil" (click)="populateForm(b)">
+      {{ pageSize * (page - 1) + 1 + i }}
+    </td>
+    <td class="ceil" (click)="populateForm(b)">{{ b.Name }}</td>
+    <td class="ceil" (click)="populateForm(b)">{{ b.Author }}</td>
+    <td class="ceil" (click)="populateForm(b)">{{ b.Category }}</td>
+    <td class="ceil" (click)="populateForm(b)">{{ b.Publisher }}</td>
+    <td>
+      <i
+        class="far fa-trash-alt fa-lg text-danger"
+        (click)="onDelete(b.Id)"
+      ></i>
+    </td>
+  </tr>
+</table>
+
+<!-- <ul class="pagination"></ul> -->
+
+<ngb-pagination
+  [collectionSize]="listData.length"
+  [(page)]="page"
+  [(pageSize)]="pageSize"
+  [maxSize]="5"
+  [rotate]="true"
+  [ellipses]="false"
+  [boundaryLinks]="true"
+></ngb-pagination>
