@@ -1,0 +1,25 @@
+.btndelete {
+    position: absolute;
+    right: 5px;
+    top: 460px;
+    padding: 10px 20px;
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #2989a7;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+   .btndelete:hover {
+    background-color: #0a6986;
+  }
+  
+   .btndelete:active {
+    background-color: #0a6986;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  

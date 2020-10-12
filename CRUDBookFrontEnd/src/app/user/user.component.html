@@ -1,0 +1,55 @@
+<!-- <nav class="navbar navbar-expand-sm bg-secondary">
+
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars"></i></a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Borrow books</a>
+      <a class="dropdown-item" href="#">Give book back</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+
+    </div>
+      </li>
+    </ul>
+    <div class = "user">
+      <span class = "username"></span>
+      <button class="btnhome btnprofile">
+        <i class="far fa-user-circle"></i>
+      </button>
+      
+    </div>
+  
+  </nav> -->
+  <div class="head">
+    <div class = "user">
+        <span class = "username"></span>
+        <button class=" btnprofile">
+          <i class="far fa-user-circle"></i>
+        </button>
+        
+      </div>
+  </div>
+  <hr>
+  <div class="body">
+    <div class="row">
+      <div class="col-md-2 left">
+        <div class="onemenu" id = "borrowbook" (click)  = "transferLink($event)" routerLink="/user/borrowbook" routerLinkActive="active" >
+            <div class="icon"><i class="fas fa-book"></i></div>
+            <div class="text"><span>Mượn sách</span></div>
+        </div>
+        <div class="onemenu" id = "givebookback" (click)  = "transferLink($event)" routerLink="/user/givebookback" routerLinkActive="active" >
+            <div class="icon"><i class="fas fa-book"></i></div>
+            <div class="text"><span>Trả sách</span></div>
+        </div>
+        <div class="onemenu" id = "info" (click)  = "transferLink($event)" routerLink="/user/info" routerLinkActive="active" >
+            <div class="icon"><i class="fas fa-file-alt"></i></div>
+            <div class="text"><span>Thông tin mượn trả</span></div>
+        </div>
+       
+      </div>
+      <div class="col-md-10 right">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+  

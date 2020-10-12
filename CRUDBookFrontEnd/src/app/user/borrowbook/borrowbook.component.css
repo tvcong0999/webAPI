@@ -1,0 +1,25 @@
+ .btnborrow {
+    position: absolute;
+    right: 5px;
+    top: 500px;
+    padding: 15px 25px;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+   .btnborrow:hover {
+    background-color: #3e8e41;
+  }
+  
+   .btnborrow:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  

@@ -1,0 +1,52 @@
+.head {
+  height: 30px;
+}
+.head .user {
+  position: absolute;
+  right: 25px;
+  top: 6px;
+}
+.head .user .btnprofile {
+  background-color: #ffffff !important;
+  border: none;
+  color: rgb(206, 106, 106);
+  padding: 12px 16px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.body {
+  margin: 5px;
+}
+.body .row .left .onemenu {
+  display: flex;
+  height: 45px;
+  transition: 0.5s;
+  margin-top: 10px;
+}
+.body .row .left #borrowbook {
+  background-color: rgb(112, 156, 156);
+}
+.body .row .left .onemenu:hover {
+  background-color: rgb(112, 156, 156);
+}
+.body .row .left .onemenu:focus {
+  background-color: rgb(112, 156, 156);
+}
+
+.body .row .left .onemenu .icon {
+  width: 35px;
+  padding-top: 0px;
+  font-size: 25px;
+}
+.body .row .left .onemenu .text {
+  padding-top: 9px;
+}
+.left {
+  height: 600px;
+  background-color: rgb(221, 230, 230);
+}
+.right {
+  height: 600px;
+  margin-top: 1rem;
+}
+

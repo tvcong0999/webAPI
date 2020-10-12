@@ -1,0 +1,13 @@
+.info{
+    display: flex;
+}
+.borrow{
+    width: 50%;
+    height: 600px;
+    background-color: brown;
+}
+.give{
+    width: 50%;
+    height: 600px;
+    background-color: burlywood;
+}
